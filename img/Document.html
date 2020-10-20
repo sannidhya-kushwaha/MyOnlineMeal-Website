@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)file:///C:/Users/hp/Desktop/none.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+    }
+    
+    .btn {
+        background-color: black;
+        color: white;
+        font-family: sans-serif;
+        font-size: 32 px;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background-color: yellow;
+    }
+</style></head>
+
+
+<body>
+
+    <div class="right">
+        <button class="btn">Call us</button>
+        <button class="btn"> Msg us</button>
+    </div>
+
+    
+    <script>
+        const cups = 42;
+
+        switch (cups) {
+            case 42:
+                console.log("the value of cups is 42")
+                break;
+
+            default:
+                console.log("the value of cups is incorrect")
+                break;
+        }
+        let names = [1, 2, 4, "Sannidhya", undefined];
+        console.log(names.length);
+
+
+
+        function max(n1, n2) {
+            if (n1 > n2) {
+                console.log("n1 is bigger");
+                return n1;
+            } else {
+                console.log("n2 is bigger ");
+                return n2;
+            }
+        }
+        let nos = max(8, 25)
+        console.log(nos);
+
+        function checker(num1, num2) {
+            if (num1 > num2) {
+                console.log(num1 + " is grater");
+
+            } else {
+                console.log(num2 + " is grater");
+
+            }
+        }
+        checker(2, 4);
+
+        function greater(n1, n2) {
+            return n1 > n2 ? n1 : n2;
+        }
+        let num1 = 5;
+        let num2 = 6;
+        console.log(greater(num1, num2) + ' is greater');
+
+
+        alert("Wel-come to the club");
+        let age = prompt("What is your age?");
+        console.log(age);
+        if (age >= 18) {
+            console.log("You are allowed inside the club.");
+        } else {
+            console.log("Ooho...! You are not allowed inside the club.");
+        }
+        let friends = ["rohan", "sohan", "sannidhya"];
+        friends.forEach(function f(element) {
+            console.log("hello friend," + element)
+        });
+
+        let dt = new date();
+        console.log(dt);
+    </script>
+
+
+
+</body></html>
